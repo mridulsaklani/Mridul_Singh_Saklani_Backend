@@ -1,0 +1,21 @@
+{
+  "name": "mridul-singh-saklani-backend",
+  "version": "1.0.0",
+  "description": "it is my portfolio website backend",
+  "license": "ISC",
+  "author": "Mridul Singh Saklani",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node"
+  },
+  "dependencies": {
+    "cookie-parser": "^1.4.7",
+    "dotenv": "^17.2.1",
+    "express": "^5.1.0",
+    "multer": "^2.0.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}
