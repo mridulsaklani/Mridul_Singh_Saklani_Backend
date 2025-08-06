@@ -5,8 +5,10 @@ import cookieParser from "cookie-parser"
 import express from "express"
 import cors from "cors"
 
+
 const app = express()
 const port = process.env.PORT || 8000
+
 
 // middlewares 
 app.use(express.json({limit: '24kb'}))
@@ -21,10 +23,16 @@ app.use(cors({
     credentials: true,
     allowedHeaders: ["Content-Type", "Authorization"]
 }))
+
+
+// import routes
+
+import authRoutes from './routes/auth.routes.js'
+
+
 //routes
 
-
-
+app.use('/api/auth', authRoutes)
 
 
 app.get('/', (req,res)=>{

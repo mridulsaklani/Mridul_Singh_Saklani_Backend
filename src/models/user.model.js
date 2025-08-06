@@ -3,6 +3,8 @@ import { Schema } from "mongoose";
 import jwt from "jsonwebtoken"
 import bcrypt from "bcrypt"
 
+import {Role} from '../constants/enum'
+
 const userSchema = new Schema({
     username: {
         type: String,
@@ -41,6 +43,11 @@ const userSchema = new Schema({
     avatar:{
         type: String,
 
+    },
+    role:{
+        type: String,
+        enum: Object.values(Role),
+        required: true
     },
     refreshToken:{
         type: String

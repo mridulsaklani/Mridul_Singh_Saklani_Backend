@@ -5,3 +5,8 @@ export const OtpTypes = {
   LOGIN: "login",
   FORGOT_PASSWORD: "forgot-password"
 };
+
+export const Role = {
+  ADMIN: "Admin",
+  USER: 'User'
+}
